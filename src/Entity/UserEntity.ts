@@ -26,3 +26,12 @@ export class UserEntityInsInput {
     @Field(() => String)
     password: string
 };
+
+@ObjectType()
+export class UserEntityLoginOutput {
+    @Field(() => Number)
+    id: number
+
+    @Field(() => String)
+    username: string
+}
